@@ -1,0 +1,227 @@
+.navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 6px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid $main-light;
+
+    .logo {
+
+        >img {
+            width: 3rem;
+        }
+    }
+    .burger{
+        display: none;
+    }
+    .navlinks>ul {
+        display: flex;
+
+        >li {
+            list-style-type: none;
+
+            >a {
+                padding: 10px;
+                font: 500 0.95rem "Open Sans";
+                color: $main;
+                transition: all 0.2s ease-in-out;
+
+                &:hover {
+                    background-color: $main-light;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+    .navbuttons>ul {
+        display: flex;
+
+        >li {
+            list-style: none;
+
+            >a {
+                padding: 6px 14px;
+                font: 500 0.95rem "Open Sans";
+                color: $main;
+                border: 1px solid $main;
+                border-radius: 5px;
+                margin: 8px;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: $main;
+                    color: white;
+                }
+
+            }
+
+            .solid {
+                border: none;
+                background-color: $main;
+                color: white;
+                border: 1px solid $main;
+
+                &:hover {
+                    box-shadow: 0px 2px 10px $main;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .navbar {
+        .navlinks>ul {
+            >li {
+                >a {
+                    font: 500 0.8rem "Open Sans";
+                }
+            }
+        }
+
+        .navbuttons>ul {
+            >li {
+                >a {
+                    font-size: 0.8rem;
+                    padding: 6px 12px;
+                }
+            }
+        }
+    }
+}
+
+.hamburgermenu {
+    display: none;
+}
+
+@media screen and (max-width: 760px) {
+    .navbar {
+        justify-content: space-around;
+        .burger{
+                display: block;
+                transition: all 0.3s ease-in-out;
+
+                >svg{
+                    color: $main;
+                }
+
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+        >.navlinks {
+            display: none;
+        }
+        > .navbuttons {
+            display: none;
+        }
+
+    }
+
+    .hamburgermenu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: fixed;
+        z-index: 100;
+        flex-direction: column;
+        background-color: white;
+        color: $main;
+        width: 100vw;
+        height: 100vh;
+        transition: all 0.4s ease-in-out;
+        transform: translateY(-100%);
+
+        >.burger{
+            position: absolute;
+            top: 3rem;
+            right: 3rem;
+
+            >svg{
+                color: $main;
+            }
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+        >.logo{
+            display: none;
+        }
+                .navlinks>ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1rem;
+        
+                    >li {
+                        list-style-type: none;
+        
+                        >a {
+                            padding: 10px;
+                            font: 500 1rem "Open Sans";
+                            color: $main;
+                            transition: all 0.2s ease-in-out;
+        
+                            &:hover {
+                                background-color: $main-light;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+                }
+        
+                .navbuttons>ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1.5rem;
+                    margin: 4rem;
+        
+                    >li {
+                        list-style: none;
+        
+                        >a {
+                            padding: 6px 14px;
+                            font: 500 0.95rem "Open Sans";
+                            color: $main;
+                            border: 1px solid $main;
+                            border-radius: 5px;
+                            transition: all 0.3s ease-in-out;
+        
+                            &:hover {
+                                background-color: $main;
+                                color: white;
+                            }
+        
+                        }
+        
+                        .solid {
+                            border: none;
+                            background-color: $main;
+                            color: white;
+                            border: 1px solid $main;
+        
+                            &:hover {
+                                box-shadow: 0px 2px 10px $main;
+                            }
+                        }
+        
+                    }
+                }
+    }
+}
+.toggle{
+    transform: translateY(0%);
+}

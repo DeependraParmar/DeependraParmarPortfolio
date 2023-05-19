@@ -1,0 +1,157 @@
+.testimonial {
+    margin: 6rem 0rem 0rem 0rem;
+    padding: 2rem 0rem;
+
+    .testimonialhead {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        padding: 0rem 2rem 1rem 2rem;
+
+        >h1 {
+            font: 900 4.8rem "Open Sans";
+            background: -webkit-linear-gradient($main, #3300ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 10px 0;
+            line-height: 5rem;
+        }
+
+        >img {
+            width: 22rem;
+            position: absolute;
+            z-index: -100;
+            bottom: 0px;
+            left: 2rem;
+        }
+    }
+}
+
+.testimonialcontent {
+    width: 83vw;
+    margin: 4rem auto;
+    position: relative;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 2.5rem 1rem;
+
+    >.carousel {
+        width: 80%;
+        margin: auto;
+    }
+
+    .testimonialcard {
+        text-align: left;
+
+        >svg {
+            font-size: 3rem;
+            color: $main;
+            margin: 0.8rem 0;
+        }
+
+        >p {
+            margin: 1rem 0;
+        }
+
+        >h3 {
+            color: $main;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .testimonial {
+        .testimonialhead {
+            >h1 {
+                font: 900 4rem "Open Sans";
+            }
+
+            >img {
+                width: 40vw;
+                position: absolute;
+                z-index: -100;
+                bottom: 0px;
+                left: -1rem;
+            }
+        }
+    }
+
+    .testimonialcontent {
+        margin: 3rem auto;
+
+        >.carousel {
+            width: 80%;
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .testimonial {
+        margin: 6rem 0rem 0rem 0rem;
+        padding: 2rem 0rem 0 0;
+
+        .testimonialhead {
+            >h1 {
+                font: 900 3rem "Open Sans";
+                right: 0;
+            }
+
+            >img {
+                width: 35vw;
+                bottom: 40px;
+                left: -1rem;
+            }
+        }
+    }
+
+    .testimonialcontent {
+        margin: 3rem auto;
+
+        >.carousel {
+            width: 80%;
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .testimonial {
+        margin: 4rem 0rem 0rem 0rem;
+        padding: 2rem 0rem 0 0;
+
+        .testimonialhead {
+            >h1 {
+                font: 900 10vw "Open Sans";
+                right: -1rem;
+            }
+
+            >img {
+                width: 35vw;
+                bottom: 40px;
+                left: 0rem;
+            }
+        }
+    }
+
+    .testimonialcontent {
+        margin: 1rem auto;
+
+        >.carousel {
+            width: 80%;
+            margin: auto;
+
+            .testimonialcard {
+                >p {
+                    font-size: 0.9rem;
+                }
+                >h3{
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}

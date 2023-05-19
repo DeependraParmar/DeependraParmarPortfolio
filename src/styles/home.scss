@@ -1,0 +1,288 @@
+.homecontainer {
+    height: 95vh;
+    padding-top: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    >div {
+        width: 100%;
+        margin: 0 1rem 0 1rem;
+        position: relative;
+    }
+
+    >.content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 3rem;
+
+        >h1 {
+            font: 700 3vw "Open Sans";
+            color: rgb(63, 63, 63);
+
+            >span {
+                font: 900 4.5vw "Open Sans";
+                background: -webkit-linear-gradient($main, #3300ff);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin: 10px 0;
+                line-height: 5rem;
+            }
+        }
+
+        .typewriterpara {
+            font: 700 2.8vw "Open Sans";
+            color: #3f3d56;
+
+        }
+
+        .content-rest {
+            margin: 10px 0px;
+
+            >p {
+                font: 500 1rem "Open Sans";
+                color: #3f3d56;
+            }
+
+            >.homebuttons {
+                margin: 20px 0px;
+
+                >ul {
+                    display: flex;
+
+                    >li {
+                        list-style: none;
+
+                        >a {
+                            padding: 8px 12px;
+                            font: 500 1rem "Open Sans";
+                            color: $main;
+                            border: 1px solid $main;
+                            border-radius: 5px;
+                            margin: 10px 10px 10px 0px;
+                            transition: all 0.3s ease-in-out;
+
+                            &:hover {
+                                background-color: $main;
+                                color: white;
+                            }
+
+                        }
+
+                        .solid {
+                            border: none;
+                            background-color: $main;
+                            color: white;
+                            border: 1px solid $main;
+
+                            &:hover {
+                                box-shadow: 0px 2px 10px $main;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.image {
+    text-align: center;
+    width: fit-content;
+
+    >img {
+        width: 95%;
+        object-fit: contain;
+        animation: imageUp 1.4s infinite alternate ease-in-out;
+
+
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 40%;
+        height: 5%;
+        border-radius: 100%;
+        bottom: -4rem;
+        background-color: rgb(178, 178, 178);
+        transform: translateX(50%);
+        filter: blur(4px);
+        animation: shadowDown 1.4s infinite alternate-reverse ease-in-out;
+    }
+}
+
+
+@keyframes imageUp {
+    to {
+        transform: translateY(20px);
+    }
+}
+
+@keyframes shadowDown {
+    to {
+        transform: translateY(1px);
+    }
+}
+
+.wave {
+    width: 100%;
+
+    >img {
+        width: 100%;
+        object-fit: fill;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .homecontainer {
+        >.content {
+
+            >h1 {
+                font: 700 2.5vw "Open Sans";
+
+                >span {
+                    font: 900 4.4vw "Open Sans";
+                }
+            }
+
+            .typewriterpara {
+                font: 700 2.8vw "Open Sans";
+            }
+            .content-rest {
+                >p {
+                    font-size: 0.9rem;
+                }
+                >.homebuttons {
+                    >ul {
+                        >li {
+                            >a {
+                                padding: 6px 12px;
+                                font: 500 0.85rem "Open Sans";
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .homecontainer {
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 8rem 0rem 10rem 0rem;
+
+        >div{
+            width: 80%;
+        }
+        >.content {
+            padding: 0;
+
+            >h1 {
+                font: 700 3.5vw "Open Sans";
+
+                >span {
+                    font: 900 7vw "Open Sans";
+                }
+            }
+
+            .typewriterpara {
+                font: 700 4.5vw "Open Sans";
+            }
+
+            .content-rest {
+                >p {
+                    font-size: 0.9rem;
+                }
+
+                >.homebuttons {
+                    >ul {
+                        >li {
+                            >a {
+                                padding: 6px 12px;
+                                font: 500 0.85rem "Open Sans";
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+        .image {
+            padding: 6rem 0rem;
+    
+            >img {
+                width: 85%;
+            }
+    
+            &::before {
+                width: 40%;
+                bottom: 3rem;
+            }
+        }
+}
+
+@media screen and (max-width: 540px) {
+    .homecontainer {
+            padding: 3rem 0rem 5rem 0rem;
+            justify-content: center;
+            align-items: center;
+            >div {
+                width: 90%;
+            }
+    
+            >.content {
+    
+                >h1 {
+                    font: 700 5vw "Open Sans";
+    
+                    >span {
+                        font: 900 9vw "Open Sans";
+                    }
+                }
+    
+                .typewriterpara {
+                    font: 700 7vw "Open Sans";
+                }
+    
+                .content-rest {
+                    >p {
+                        font-size: 0.9rem;
+                    }
+    
+                    >.homebuttons {
+                        >ul {
+                            >li {
+                                >a {
+                                    padding: 6px 12px;
+                                    font: 500 0.85rem "Open Sans";
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .image {
+            padding: 4rem 0rem 3rem 0rem;
+    
+            >img {
+                width: 95%;
+            }
+    
+            &::before {
+                width: 40%;
+                bottom: 0rem;
+            }
+        }
+}

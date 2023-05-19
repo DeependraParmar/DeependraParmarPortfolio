@@ -1,0 +1,35 @@
+
+{
+  "certifications": [
+    {
+      "title": "Introduction to HTML",
+      "imgSrc": "https://files.codingninjas.in/certi_image320338dba26ebeac2818d97ca398f6131ffc1b.jpg",
+      "issuer": "Coding Ninjas"
+    },
+    {
+      "title": "Introduction to CSS",
+      "imgSrc": "https://files.codingninjas.in/certi_image320469c880862b8f7dee633486ad9e43fc4cc5.jpg",
+      "issuer": "Coding Ninjas"
+    },
+    {
+      "title": "Introduction to JS",
+      "imgSrc": "https://files.codingninjas.in/certi_image3209534da16f0191f029afc50427d45183b739.jpg",
+      "issuer": "Coding Ninjas"
+    },
+    {
+      "title": "Introduction to Java",
+      "imgSrc": "https://files.codingninjas.in/certi_image2588825af70b23f3cab6c5b33f0651e06de252.jpg",
+      "issuer": "Coding Ninjas"
+    },
+    {
+      "title": "Introduction to C++",
+      "imgSrc": "https://files.codingninjas.in/certi_image23128408890beb9a23e87dc541f15148131fa2.jpg",
+      "issuer": "Coding Ninjas"
+    },
+    {
+      "title": "OOPS in C++",
+      "imgSrc": "https://files.codingninjas.in/certi_image25888153028b98cf77580c057780a7a55c5797.jpg",
+      "issuer": "Coding Ninjas"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 6rem 3rem 6rem;
+    flex-wrap: wrap;
+    
+    >div{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .footer{
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+}

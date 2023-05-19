@@ -1,0 +1,25 @@
+{
+    "experience: ": [
+        {
+            "company": "BM Developers Ltd.",
+            "url": "https://bmdevelopers.netlify.app",
+            "position": "Founder & CEO",
+            "from": "July 2021",
+            "description": "Building highly scalable full stack websites and webapps. My aim here is to developer beautiful user-interfaces and deliver above the expectations." 
+        },
+        {
+            "company": "Youtube",
+            "url": "https://youtube.com/@learnlogics",
+            "position": "Educator @ Learn Logics",
+            "from": "July 2021",
+            "description": "Building student community by teaching the important concepts of Web Development using the Modern Technologies and Frameworks. Starting from the scratch to the end" 
+        },
+        {
+            "company": "GSSOC @ 2023",
+            "url": "https://www.girlscript.tech",
+            "position": "Contributor",
+            "from": "May-July 2023",
+            "description": "Learned and explored various technologies related to Open Source Contributions. The overall experience was amazing. Learned a lot." 
+        }
+    ]
+}
