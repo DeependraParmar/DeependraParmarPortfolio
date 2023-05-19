@@ -33,14 +33,25 @@ export default function Home() {
       },
       transition: {
         duration: 0.5,
-        delay: 0.2,
+        delay: 0.5,
+      }
+    },
+    home: {
+      initial: {
+        opacity: 0
+      },
+      whileInView: {
+        opacity: 1
+      },
+      transition: {
+        duration: 0.8,
       }
     },
   }
 
   return (
     <>
-      <div className='homecontainer'>
+      <motion.div {...animations.home} className='homecontainer'>
         <div className='content'>
           <motion.h1 {...animations.headdiv}>
             Hi, I am <br />
@@ -75,7 +86,7 @@ export default function Home() {
           <img src={svg} alt="Developer here" />
         </div>
 
-      </div>
+      </motion.div>
 
       <div className="wave">
         <img src={wave} alt="" />

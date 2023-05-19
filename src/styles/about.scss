@@ -1,0 +1,93 @@
+.aboutsection {
+    padding: 8rem 2rem 0rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    >.head {
+        display: flex;
+        width: 95%;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+        padding: 1rem 2rem 1rem 2rem;
+
+        >h1 {
+            font: 900 4.8rem "Open Sans";
+            background: -webkit-linear-gradient($main, #3300ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 10px 0;
+            line-height: 5rem;
+        }
+
+        >img {
+            width: 18rem;
+            position: absolute;
+            z-index: -100;
+            bottom: 0rem;
+            right: 4rem;
+        }
+    }
+
+    >.about{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80vw;
+        gap: 3rem;
+        margin: 2rem;
+
+        >img{
+            width: 40%;
+            border-radius: 20px;
+            filter: saturate(1.2);
+            filter: contrast(1.2);
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            >p {
+                    word-spacing: 2px;
+                    font-size: 1.05rem;
+                }
+
+        }
+    }
+    .collaborate{
+        width: 75vw;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        background-color: $main-light;
+        padding: 2.5rem;
+        border-radius: 20px;
+        gap: 10px;
+        margin: 0.5rem 0;
+        
+        >h1{
+            color: $main-dark;
+        }
+
+        >.info{
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 0.5rem 0;
+
+            >a{
+                font-size: 1.05rem;
+                background-color: $main;
+                font-weight: 600;
+                padding: 10px 20px;
+                border-radius: 5px;
+                color: white;
+            }
+        }
+    }
+}
