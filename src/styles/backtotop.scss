@@ -30,3 +30,18 @@
         }
     }
 }
+
+@media screen and (max-width: 500px) {
+    .backtotop {
+            >button {
+                bottom: 1rem;
+                right: 0.8rem;
+    
+                >svg {
+                    width: 2rem;
+                    height: 2rem;
+                    padding: 0.8rem;
+                }
+            }
+        }
+}
