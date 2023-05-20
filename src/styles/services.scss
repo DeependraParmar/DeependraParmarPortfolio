@@ -1,0 +1,82 @@
+.servicessection {
+    padding: 6rem 2rem 2rem 2rem;
+
+    .head {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+        padding: 1rem 2rem 1rem 2rem;
+
+        >h1 {
+            font: 900 4.8rem "Open Sans";
+            background: -webkit-linear-gradient($main, #3300ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 10px 0;
+            line-height: 5rem;
+        }
+
+        >img {
+            width: 15rem;
+            margin: 0 1rem;
+            position: absolute;
+            z-index: -100;
+            bottom: -2rem;
+            right: 0px;
+        }
+    }
+
+    .servicesholder {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin: 2rem auto;
+        width: 95%;
+
+        .service {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 1rem;
+            width: 20rem;
+            height: 20rem;
+            padding: 1rem;
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+                border: 1px solid white;
+            cursor: pointer;
+
+            &:hover {
+                border: 1px solid $main;
+            }
+
+            >.icon {
+                padding: 2rem 2.2rem;
+                background-color: $main;
+                border-radius: 100%;
+
+                >svg {
+                    width: 3rem;
+                    height: 3rem;
+                    color: white;
+                }
+            }
+
+            >h2 {
+                font: 700 1.1rem "Open Sans";
+                background: -webkit-linear-gradient($main, #3300ff);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            >p {
+                font: 400 0.9rem "Open Sans";
+                text-align: center;
+            }
+        }
+    }
+}
