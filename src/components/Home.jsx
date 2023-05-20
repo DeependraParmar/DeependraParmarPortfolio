@@ -8,6 +8,7 @@ import Skills from './Skills'
 import Testimonial from './Testimonial'
 
 export default function Home() {
+  document.title = "Deependra Parmar: Full Stack Developer";
   const animations = {
     div: {
       initial: {

@@ -43,6 +43,7 @@ import skillimg from '../assets/skills.svg'
 export default function Skills() {
     const skills = [html, css, js, typescript, node, express, mongodb, mongoose, react, redux, npm, yarn, c, cpp, java, python, csharp, mysql, bootstrap, sass, postcss, tailwindcss, git, github, axios, oauth, jwt, figma, ps, pp, filmora, canva, chakraui, postman, firebase, heroku, netlify, vercel]
 
+
     const animations = {
         div: {
             initial: {

@@ -7,6 +7,7 @@ import { BsRocketTakeoffFill } from "react-icons/bs";
 import SocialMediaIcons from './SocialMediaIcons'
 
 export default function About() {
+  document.title = "About | Deependra Parmar";
   const animations = {
     head: {
       initial: {
@@ -63,7 +64,7 @@ export default function About() {
       <motion.div {...animations.head} className="collaborate">
         <h1>Let's Collaborate</h1>
         <div className="info">
-          <p>Collaboration is the essence of growth and innovation. It is the art of connecting diverse minds, talents, and perspectives towards a common goal. When we come together, we unlock new realms of creativity, solve complex problems with ease, and achieve greater impact. Together, we can forge powerful connections, bridge gaps, and build a brighter future. Let's collaborate and connect to make a difference that resonates far beyond our individual contributions.</p>
+          <p>Collaboration is the essence of growth and innovation. It is the art of connecting diverse minds, talents, and perspectives towards a common goal. When we come together, we unlock new realms of creativity, solve complex problems with ease, and achieve greater impact. Let's collaborate and connect to make a difference that resonates far beyond our individual contributions.</p>
           <Link to={'/contact'}>Let's Connect  <BsRocketTakeoffFill /> </Link>
         </div>
       </motion.div>

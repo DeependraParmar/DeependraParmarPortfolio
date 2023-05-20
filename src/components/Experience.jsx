@@ -11,6 +11,7 @@ import { GoVerified } from "react-icons/go"
 import badge from "../assets/badge.png";
 
 export default function Experience() {
+  document.title = "Experience | Deependra Parmar";
   const animations = {
     div: {
       initial: {
