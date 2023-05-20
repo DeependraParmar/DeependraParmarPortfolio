@@ -9,6 +9,7 @@ import { HiSpeakerphone } from 'react-icons/hi'
 import { SiMicrostrategy } from 'react-icons/si'
 import servicesimage from "../assets/services.svg";
 import { motion } from 'framer-motion'
+import { MdWork } from 'react-icons/md'
 
 export default function Services() {
   document.title = "Services | Deependra Parmar";
@@ -63,7 +64,7 @@ export default function Services() {
   const animations = {
     head: {
       initial: { opacity: 0, y: 70 },
-      whileInView: { opacity: 1, y: 0},
+      whileInView: { opacity: 1, y: 0 },
       transition: { duration: 0.5, ease: "easeInOut" }
     }
   }
@@ -84,6 +85,10 @@ export default function Services() {
           </motion.div>
         ))}
       </div>
+      <motion.div {...animations.head} className="contact">
+        <p>As a <b>freelancer</b> and <b>independent developer</b>, I am always <b>Open</b> for Full Stack Development Roles. Collaborate now...</p>
+        <a href="mailto:deependraparmar1@gmail.com" target='_blank' rel='noopener noreferrer' >Hire Me <MdWork/></a>
+      </motion.div>
     </div>
   )
 }

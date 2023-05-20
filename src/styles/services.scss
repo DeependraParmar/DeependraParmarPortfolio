@@ -79,4 +79,27 @@
             }
         }
     }
+    .contact{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $main-light;
+        width: 85%;
+        margin: 2rem auto;
+        border-radius: 10px;
+        padding: 2rem;
+
+        >p{
+            font: 400 1.1rem "Open Sans";
+            width: 80%;
+        }
+        >a{
+            font-size: 1.1rem;
+            font-weight: 600;
+            background-color: $main;
+            padding: 10px 18px;
+            border-radius: 10px;
+            color: white;
+        }
+    }
 }
