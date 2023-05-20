@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { TbWorldWww } from 'react-icons/tb'
 import { FaShoppingCart, FaSearch } from 'react-icons/fa'
 import { GiFlowerPot } from 'react-icons/gi'
@@ -10,9 +10,14 @@ import { SiMicrostrategy } from 'react-icons/si'
 import servicesimage from "../assets/services.svg";
 import { motion } from 'framer-motion'
 import { MdWork } from 'react-icons/md'
+import BackToTop from './BackToTop'
 
 export default function Services() {
   document.title = "Services | Deependra Parmar";
+  useEffect(() => {
+    // 👇️ scroll to top on page load
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  }, []);
   const services = [
     {
       icon: <TbWorldWww />,
@@ -89,6 +94,7 @@ export default function Services() {
         <p>As a <b>freelancer</b> and <b>independent developer</b>, I am always <b>Open</b> for Full Stack Development Roles. Collaborate now...</p>
         <a href="mailto:deependraparmar1@gmail.com" target='_blank' rel='noopener noreferrer' >Hire Me <MdWork/></a>
       </motion.div>
+      <BackToTop/>
     </div>
   )
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import certifications from "../assets/certifications.json";
 import certificate from "../assets/certificate.svg";
@@ -9,9 +9,14 @@ import experience from "../assets/experience.svg";
 import experiencedata from "../assets/experience.json";
 import { GoVerified } from "react-icons/go"
 import badge from "../assets/badge.png";
+import BackToTop from './BackToTop';
 
 export default function Experience() {
   document.title = "Experience | Deependra Parmar";
+  useEffect(() => {
+    // 👇️ scroll to top on page load
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  }, []);
   const animations = {
     div: {
       initial: {
@@ -93,7 +98,7 @@ export default function Experience() {
             )}
         </div>
       </div>
-
+            <BackToTop />
     </div>
   )
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 import { motion } from 'framer-motion'
 import blogdetails from '../assets/blogs';
@@ -11,8 +11,13 @@ import blog06 from "../assets/blogimages/blog06.jpg";
 import blog07 from "../assets/blogimages/blog07.jpg";
 import blog08 from "../assets/blogimages/blog08.jpg";
 import blog09 from "../assets/blogimages/blog09.jpg";
+import BackToTop from './BackToTop';
 
 export default function BlogDetails() {
+  useEffect(() => {
+    // 👇️ scroll to top on page load
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  }, []);
   const params = useParams();
   const data =  blogdetails.blogs.findIndex((blog) => blog.id === params.id)
   const dataobj = blogdetails.blogs[data];
@@ -44,6 +49,7 @@ export default function BlogDetails() {
   }
 
   return (
+    <>
     <motion.div {...animations.blogdetail} className='blogdetailssection'>
       <div className="blogcontainer">
         <img src={imgArr[data]} alt="" />
@@ -53,6 +59,7 @@ export default function BlogDetails() {
         })}</p>
       </div>
     </motion.div>
-
+    <BackToTop/>
+    </>
   )
 }

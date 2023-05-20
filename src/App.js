@@ -12,6 +12,11 @@ import About from "./components/About";
 import BlogDetails from "./components/BlogDetails";
 
 function App() {
+  document.oncontextmenu = function(element) {
+    element.preventDefault();
+  }
+
+
   return (
     <Router>
       <Header />

@@ -11,7 +11,8 @@
 @import "about";
 @import "blogdetails";
 @import "blog";
-@import "services.scss";
+@import "services";
+@import "backtotop";
 
 *{
     margin: 0;
@@ -54,4 +55,12 @@ li{
 ::selection{
     background: $main;
     color: #fff;
+}
+
+// disabling ghost image dragging 
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
 }

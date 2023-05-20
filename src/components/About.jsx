@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import myimage from '../assets/deependraparmar.jpg'
 import aboutme from '../assets/aboutme.svg'
 import { Link } from 'react-router-dom'
 import { BsRocketTakeoffFill } from "react-icons/bs";
 import SocialMediaIcons from './SocialMediaIcons'
+import BackToTop from './BackToTop'
 
 export default function About() {
+  useEffect(() => {
+    // 👇️ scroll to top on page load
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  }, []);
   document.title = "About | Deependra Parmar";
   const animations = {
     head: {
@@ -30,7 +35,7 @@ export default function About() {
         opacity: 1
       },
       transition: {
-        duration: 0.9,
+        duration: 0.6,
         delay: 0.5,
       }
     },
@@ -68,6 +73,7 @@ export default function About() {
           <Link to={'/contact'}>Let's Connect  <BsRocketTakeoffFill /> </Link>
         </div>
       </motion.div>
+      <BackToTop />
     </div>
   )
 }

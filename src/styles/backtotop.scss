@@ -1,0 +1,32 @@
+.backtotop {
+    >button {
+        position: fixed;
+        z-index: 10;
+        bottom: 2rem;
+        right: 1rem;
+        transition: all 0.3s ease-in-out;
+        border: 0px solid $main;
+        background: transparent;
+
+        >svg {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 100%;
+            padding: 1rem;
+            background-color: $main;
+            outline: none;
+            color: white;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                background-color: white;
+                color: $main-dark;
+            }
+        }
+
+
+        &:hover {
+            background: transparent;
+        }
+    }
+}

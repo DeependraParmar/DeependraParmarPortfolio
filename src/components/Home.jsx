@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import svg from "../assets/developer.svg"
 import { motion } from 'framer-motion'
 import Typewriter from 'typewriter-effect'
@@ -6,8 +6,13 @@ import SocialMediaIcons from './SocialMediaIcons'
 import wave from '../assets/wave.svg'
 import Skills from './Skills'
 import Testimonial from './Testimonial'
+import BackToTop from './BackToTop'
 
 export default function Home() {
+  useEffect(() => {
+    // 👇️ scroll to top on page load
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  }, []);
   document.title = "Deependra Parmar: Full Stack Developer";
   const animations = {
     div: {
@@ -99,6 +104,8 @@ export default function Home() {
 
       {/* Testimonial section  */}
       <Testimonial />
+
+      <BackToTop />
     </>
   )
 }

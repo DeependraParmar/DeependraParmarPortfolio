@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { motion } from 'framer-motion';
 import blog from '../assets/blog.svg';
 import blog01 from "../assets/blogimages/blog01.jpg";
@@ -11,9 +11,14 @@ import blog07 from "../assets/blogimages/blog07.jpg";
 import blog08 from "../assets/blogimages/blog08.jpg";
 import blog09 from "../assets/blogimages/blog09.jpg";
 import { Link } from 'react-router-dom';
+import BackToTop from './BackToTop';
 
 export default function Blog() {
   document.title = "Blogs | Deependra Parmar";
+  useEffect(() => {
+    // 👇️ scroll to top on page load
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  }, []);
   const data = {
     blogs: [
       {
@@ -108,6 +113,8 @@ export default function Blog() {
         ))
         }
       </div>
+
+      <BackToTop />
     </div>
   )
 }
