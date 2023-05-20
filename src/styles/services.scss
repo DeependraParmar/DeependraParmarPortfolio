@@ -41,13 +41,14 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            text-align: center;
             gap: 1rem;
             width: 20rem;
             height: 20rem;
             padding: 1rem;
             border-radius: 10px;
             transition: all 0.3s ease-in-out;
-                border: 1px solid white;
+            border: 1px solid white;
             cursor: pointer;
 
             &:hover {
@@ -68,7 +69,7 @@
 
             >h2 {
                 font: 700 1.1rem "Open Sans";
-                background: -webkit-linear-gradient($main, #3300ff);
+                background: $main-dark;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
@@ -79,7 +80,8 @@
             }
         }
     }
-    .contact{
+
+    .contact {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -89,17 +91,76 @@
         border-radius: 10px;
         padding: 2rem;
 
-        >p{
-            font: 400 1.1rem "Open Sans";
+        >p {
+            font: 400 1rem "Open Sans";
             width: 80%;
         }
-        >a{
-            font-size: 1.1rem;
+
+        >a {
+            font-size: 1rem;
             font-weight: 600;
             background-color: $main;
             padding: 10px 18px;
             border-radius: 10px;
             color: white;
+            width: 12%;
+            text-align: center;
         }
     }
 }
+@media screen and (max-width: 950px) {
+    .servicessection{
+        padding: 8rem 2rem;
+
+        .contact {
+            align-items: flex-start;
+            gap: 1rem;
+            margin: auto;
+            padding: 1rem 1.5rem;
+            
+            >p {
+                width: 100%;
+                font-size: 0.9rem;
+            }
+            >a{
+                width: 20vw;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 700px) {
+    .servicessection {
+        padding: 5rem 1rem;
+        .head {
+            padding: 0;
+
+            >h1 {
+                font-size: 10vw;
+            }
+
+            >img {
+                width: 30vw;
+                bottom: 1rem;
+            }
+        }
+
+        .servicesholder {
+            gap: 0;
+
+            .service {
+                width: 80vw;
+                padding: 0;
+            }
+        }
+
+        .contact{
+            flex-direction: column;
+
+            >a{
+                padding: 0.5rem 1rem;
+                width: 40vw;
+            }
+        }
+    }
+}
+
