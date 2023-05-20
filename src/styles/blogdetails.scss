@@ -26,3 +26,26 @@
         }
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .blogdetailssection {
+            width: 100%;
+    
+            >.blogcontainer {
+                width: 80%;
+            }
+        }
+}
+@media screen and (max-width: 750px) {
+    .blogdetailssection {
+            width: 100%;
+    
+            >.blogcontainer {
+                width: 90%;
+
+                >h1{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+}
