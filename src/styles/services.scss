@@ -150,6 +150,11 @@
             .service {
                 width: 80vw;
                 padding: 0;
+                transition: none;
+
+                &:hover{
+                    border: none;
+                }
             }
         }
 
