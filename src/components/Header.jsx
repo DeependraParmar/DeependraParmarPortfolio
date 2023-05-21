@@ -57,7 +57,7 @@ const NavContent = ({ className }) => (
       </ul>
     </div>
     <div className="burger" id='burger'>
-      <BiMenuAltRight color='$main' size={40} onClick={toggle}  />
+      <BiMenuAltRight color='$main' size={40} onMouseOver={toggle}  />
     </div>
   </section>
 )
