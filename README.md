@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://deependraparmar.vercel.app/assets/logo.png" alt="Portfolio Logo" width="200" height="200">
+  (https://deependraparmar.vercel.app)
 </p>
 
 <h1 align="center">Deependra Parmar</h1>
