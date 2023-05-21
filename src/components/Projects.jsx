@@ -4,7 +4,7 @@ import { projects } from '../assets/projects';
 import projectsimage from '../assets/projects.svg';
 import { AiFillGithub } from 'react-icons/ai';
 import { BsBoxArrowUpRight } from 'react-icons/bs';
-import { animations, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 
 
@@ -68,7 +68,8 @@ export default function Projects() {
                       <img src={project.img} alt="" />
                       <h3>{project.title}</h3>
                       <p>{project.description}</p>
-                      <a href={project.githuburl} target='_blank' rel='noopener noreferrer' >Github<AiFillGithub /></a>
+                      <a href={project.githuburl} target='_blank' rel='noopener noreferrer' >Visit  <BsBoxArrowUpRight /></a>
+                      <a href={project.githuburl} target='_blank' rel='noopener noreferrer' >Github  <AiFillGithub /></a>
                     </a>
 
                   </div>
