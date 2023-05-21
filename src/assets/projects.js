@@ -55,7 +55,7 @@ export const projects = [
     },
     {
         title: "Learn Logics",
-        description: "Learn Logics is for the students who to learn programming languages and want to learn about the latest techs.",
+        description: "Learn Logics is for the students to learn programming languages and want to learn about the latest techs.",
         url: "https://learnlogics.github.io",
         img: learnlogics,
         technologies: [
