@@ -68,7 +68,7 @@ export default function Projects() {
                       <img src={project.img} alt="" />
                       <h3>{project.title}</h3>
                       <p>{project.description}</p>
-                      <a href={project.githuburl}>Github<AiFillGithub /></a>
+                      <a href={project.githuburl} target='_blank' rel='noopener noreferrer' >Github<AiFillGithub /></a>
                     </a>
 
                   </div>
