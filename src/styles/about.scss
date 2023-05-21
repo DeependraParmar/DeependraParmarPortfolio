@@ -4,6 +4,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 95%;
+    margin: auto;
 
     >.head {
         display: flex;
@@ -17,6 +19,7 @@
             font: 900 4.8rem "Open Sans";
             background: -webkit-linear-gradient($main, #3300ff);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             margin: 10px 0;
             line-height: 5rem;
@@ -33,7 +36,7 @@
 
     >.about{
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         width: 80vw;
         gap: 3rem;
@@ -91,6 +94,111 @@
                 border-radius: 5px;
                 color: white;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .aboutsection {
+            padding: 6rem 2rem 0rem 2rem;
+    
+            >.head {
+                width: 100%;
+                padding: 1rem;
+    
+                >h1 {
+                    font-size: 8vw;
+                }
+    
+                >img {
+                    width: 25vw;
+                    bottom: -2rem;
+                }
+            }
+    
+            >.about {
+                width: 90vw;
+                margin: 0rem;
+                padding: 2rem;
+    
+                >img {
+                    width: 35%;
+                }
+            }
+    
+            .collaborate {
+                width: 85vw;
+                padding: 2rem;
+    
+                >.info {
+                    >a {
+                        font-size: 1.02rem;
+                    }
+                }
+            }
+        }
+}
+
+@media screen and (max-width: 780px) {
+    .aboutsection {
+        padding: 6rem 2rem 1rem 2rem;
+
+        >.head {
+            width: 100%;
+            >img {
+                width: 25vw;
+                bottom: 2rem;
+            }
+        }
+
+        >.about {
+            width: 90vw;
+            flex-direction: column;
+            align-items: center;
+
+            >img {
+                width: 60%;
+            }
+        }
+
+        .collaborate {
+            width: 85vw;
+            padding: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .aboutsection {
+        padding: 6rem 1rem 1rem 1rem;
+
+        >.head {
+            width: 100%;
+            padding: 0;
+            >h1{
+                font-size: 12vw;
+            }
+            >img {
+                width: 25vw;
+                bottom: 2rem;
+                right: 0;
+            }
+        }
+
+        >.about {
+            width: 90vw;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+
+            >img {
+                width: 100%;
+            }
+        }
+
+        .collaborate {
+            width: 80vw;
+            padding: 2rem;
         }
     }
 }
