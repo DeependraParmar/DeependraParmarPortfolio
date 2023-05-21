@@ -67,6 +67,7 @@
                     margin: 0.8rem 0;
                     padding: 0.8rem;
                     border-radius: 6px;
+                    background-color: white;
 
                     >svg {
                         width: 1.35rem;
@@ -80,7 +81,7 @@
                         border: none;
                         resize: none;
                         outline: none;
-
+                        background-color: white;
                     }
                 }
 
@@ -102,58 +103,60 @@
 
 @media screen and (max-width: 950px) {
     .contact {
-    
-            .head {
-                width: 95%;
-                padding: 1rem 0;
-                margin: 0;
-                >h1 {
-                    font-size: 10vw;
-                }
-    
-                >img {
-                    width: 35vw;
-                    bottom: 1rem;
-                    right: 0;
-                }
+
+        .head {
+            width: 95%;
+            padding: 1rem 0;
+            margin: 0;
+
+            >h1 {
+                font-size: 10vw;
             }
-    
-            .contactsection {
+
+            >img {
+                width: 35vw;
+                bottom: 1rem;
+                right: 0;
+            }
+        }
+
+        .contactsection {
+            justify-content: center;
+            width: 100%;
+
+            >.contactimage {
+                display: none;
+
+            }
+
+            >.contactform {
+                height: 100%;
+                display: flex;
                 justify-content: center;
-                width: 100%;
-    
-                >.contactimage {
-                    display: none;
-                    
-                }
-    
-                >.contactform {
-                    height: 100%;
-                    display: flex;
-                    justify-content: center;
-                    width: 90vw;
-                    margin: 0;
-                    >form {
-                        width: 80%;
-    
-                        >div {
-    
-                            >input,
-                            textarea {
-                                width: 100%;
-                                border: none;
-                                resize: none;
-                                outline: none;
-    
-                            }
+                width: 90vw;
+                margin: 0;
+
+                >form {
+                    width: 80%;
+
+                    >div {
+
+                        >input,
+                        textarea {
+                            width: 100%;
+                            border: none;
+                            resize: none;
+                            outline: none;
+
                         }
-    
-                        >button {
-                            width: 108%;
-                            font: 600 1rem "Open Sans";
-                        }
+                    }
+
+                    >button {
+                        width: 108%;
+                        font: 600 1rem "Open Sans";
                     }
                 }
             }
         }
+    }
 }
