@@ -10,6 +10,7 @@ import Contact from "./components/Contact";
 import Services from "./components/Services";
 import About from "./components/About";
 import BlogDetails from "./components/BlogDetails";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   document.oncontextmenu = function(element) {
@@ -31,6 +32,10 @@ function App() {
         <Route path='/about' element={<About/>} />
       </Routes>
       <Footer />
+      <Toaster
+        position="bottom-center"
+        reverseOrder={false}
+      />
     </Router>
   );
 }

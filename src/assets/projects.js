@@ -13,7 +13,7 @@ import wordx from "../assets/projectsimages/wordx.png";
 export const projects = [
     {
         title: "Deependra Parmar",
-        description: "This is my personal favorite portfolio website. I have created this website to showcase my skills,projects & more",
+        description: "This is my personal favorite portfolio website. I have created this website to showcase my skills,projects & more.",
         url: "https://deependraparmar.vercel.app",
         img: deependraparmar,
         technologies: [

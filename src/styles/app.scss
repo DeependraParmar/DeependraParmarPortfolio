@@ -14,6 +14,7 @@
 @import "services";
 @import "backtotop";
 @import "projects";
+@import "contact";
 
 *{
     margin: 0;
@@ -64,4 +65,9 @@ img {
     -khtml-user-drag: none;
     -moz-user-drag: none;
     -o-user-drag: none;
+}
+
+.disableBtn{
+    opacity: 0.5 !important;
+    cursor: not-allowed !important;
 }
