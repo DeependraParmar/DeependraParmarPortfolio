@@ -38,6 +38,20 @@ export const projects = [
         githuburl: "https://www.github.com/DeependraParmar/BM-Developers"
     },
     {
+        title: "Microsoft Clone",
+        description: "Microsoft and its UI is among the best in the world. So, I tried to clone the Microsoft website using TailwindCSS.",
+        url: "https://microsoftbydp.netlify.app",
+        img: microsoft,
+        technologies: [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "TailwindCSS",
+            "Netlify"
+        ],
+        githuburl: "https://www.github.com/DeependraParmar/Microsoft-Clone"
+    },
+    {
         title: "CryptoGraphix",
         description: "Dynamic Web App capable of fetching Realtime Data and Visualizing the data using Graphs and Charts.",
         url: "https://cryptographix.vercel.app",
@@ -68,20 +82,6 @@ export const projects = [
             "Github Pages"
         ],
         githuburl: "https://www.github.com/DeependraParmar/LearnLogics"
-    },
-    {
-        title: "Microsoft Clone",
-        description: "Microsoft and its UI is among the best in the world. So, I tried to clone the Microsoft website using TailwindCSS.",
-        url: "https://microsoftbydp.netlify.app",
-        img: microsoft,
-        technologies: [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "TailwindCSS",
-            "Netlify"
-        ],
-        githuburl: "https://www.github.com/DeependraParmar/Microsoft-Clone"
     },
     {
         title: "AwesomeUI",

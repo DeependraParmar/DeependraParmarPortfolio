@@ -81,6 +81,15 @@ export default function Projects() {
                       <img src={project.img} alt="" />
                       <h3>{project.title}</h3>
                       <p>{project.description}</p>
+                      <div className='tech'>
+                      {
+                        project.technologies.map((tech, index) => {
+                          return (
+                            <span key={index}>{tech}</span>
+                          )
+                        })
+                      }
+                      </div>
                       <a href={project.url} target='_blank' rel='noopener noreferrer' > <BsBoxArrowUpRight /></a>
                       <a href={project.githuburl} target='_blank' rel='noopener noreferrer' ><AiFillGithub /></a>
                     </a>
