@@ -45,6 +45,19 @@ export default function Projects() {
           ease: [0.6, 0.05, -0.01, 0.9]
         }
       }
+    },
+    projectholder: {
+      initial: {
+        opacity: 0,
+      },
+      whileInView: {
+        opacity: 1,
+        transition: {
+          duration: 0.7,
+          ease: [0.6, 0.05, -0.01, 0.9],
+          delay: 0.1
+        }
+      }
     }
   }
 
@@ -57,7 +70,7 @@ export default function Projects() {
           <img src={projectsimage} alt="" />
         </motion.div>
 
-        <div className="projectholder">
+        <motion.div {...animations.projectholder} className="projectholder">
           {
             projects.map((project, index) => {
               return (
@@ -77,7 +90,7 @@ export default function Projects() {
               )
             })
           }
-        </div>
+        </motion.div>
       </div>
       <BackToTop />
     </div>
