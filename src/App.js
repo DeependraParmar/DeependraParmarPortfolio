@@ -16,7 +16,7 @@ function App() {
   document.oncontextmenu = function(element) {
     element.preventDefault();
   }
-
+ 
 
   return (
     <Router>
