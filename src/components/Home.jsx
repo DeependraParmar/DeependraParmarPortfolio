@@ -64,7 +64,7 @@ export default function Home() {
             <span>Deependra Parmar</span>
           </motion.h1>
           <Typewriter options={{
-            strings: [" A Developer🔥", " A Designer✨", " A Creator💖", " An Educator🌈"],
+            strings: [" A Full Stack Developer🔥", " A Designer✨", " A Creator💖", " An Educator🌈"],
             autoStart: true,
             loop: true,
             cursor: "",
