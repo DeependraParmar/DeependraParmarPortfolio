@@ -1,4 +1,4 @@
-import cryptographix from "../assets/projectsimages/cryptographix.jpg";
+import cryptographix from "../assets/projectsimages/cryptographix.png";
 import learnlogics from "../assets/projectsimages/learnlogics.png"
 import bmdevelopers from "../assets/projectsimages/bmdevelopers.png";
 import microsoft from "../assets/projectsimages/microsoft.png";
