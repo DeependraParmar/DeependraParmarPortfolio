@@ -5,7 +5,6 @@ import Typewriter from 'typewriter-effect'
 import SocialMediaIcons from './SocialMediaIcons'
 import wave from '../assets/wave.svg'
 import Skills from './Skills'
-import Testimonial from './Testimonial'
 import BackToTop from './BackToTop'
 
 export default function Home() {
@@ -100,10 +99,6 @@ export default function Home() {
 
       {/* skills section  */}
       <Skills />
-
-
-      {/* Testimonial section  */}
-      <Testimonial />
 
       <BackToTop />
     </>
